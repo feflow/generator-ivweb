@@ -1,0 +1,4 @@
+/node_modules
+/dev
+/.pack-tmp
+/public
