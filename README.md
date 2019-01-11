@@ -1,14 +1,14 @@
-# [generator-feflow-react](http://git.code.oa.com/feflow/generator-feflow-react)
+# [generator-ivweb](http://git.code.oa.com/feflow/generator-ivweb)
 
-generator-feflow-react is a project scaffolding plugin developed by the feflow team, generate multi-page applications based on react and redux
+generator-ivweb is a project scaffolding plugin developed by the ivweb team, generate multi-page applications based on react and redux
 
 ## Quick Overview
 
 ``` sh
-npm install feflow-cli -g   /* install feflow-cli */
-feflow install generator-feflow-react -g /* install generator*/
-feflow init /* create app */
-feflow dev /* run app */
+npm install feflow-cli -g
+feflow install generator-ivweb -g
+feflow init
+feflow dev
 ```
 
 ## Creating an App
@@ -22,7 +22,7 @@ npm install feflow-cli -g
 
 ### install generator
 ```sh
-feflow install generator-feflow-react -g
+feflow install generator-ivweb -g
 ```
 you can install your generator or own generator, [how to develop a generator?]()
 
