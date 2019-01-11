@@ -1,0 +1,38 @@
+{
+    "builderType": "builder-webpack4",
+    "builderOptions": {
+        "product": "",
+        "outDir": "<%= outDir %>",
+        "moduleName": "<%= moduleName %>",
+        "bizName": "<%= bizName %>",
+        "minifyHTML": true,
+        "minifyCSS": true,
+        "minifyJS": true,
+        "inlineCSS": true,
+        "usePx2rem": true,
+        "remUnit": 37.5,
+        "remPrecision": 6,
+        "inject": true,
+        "useTreeShaking": true,
+        "port": 8001,
+        "hot": true,
+        "cdn": "",
+        "domain": "",
+        "externals": [
+            {
+                "module": "react",
+                "entry": "//11.url.cn/now/lib/16.2.0/react.min.js?_bid=3123",
+                "global": "React"
+            },
+            {
+                "module": "react-dom",
+                "entry": "//11.url.cn/now/lib/16.2.0/react-dom.min.js?_bid=3123",
+                "global": "ReactDOM"
+            }
+        ]
+    },
+    "deployerType": "",
+    "deployerOptions": {
+
+    }
+}
