@@ -17,4 +17,3 @@ import indexPage from "./index";
     }
    init();
 })();
- 

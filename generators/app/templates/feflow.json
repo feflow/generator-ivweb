@@ -2,9 +2,9 @@
     "builderType": "builder-webpack4",
     "builderOptions": {
         "product": "",
-        "outDir": "<%= outDir %>",
-        "moduleName": "<%= moduleName %>",
-        "bizName": "<%= bizName %>",
+        "outDir": "dist",
+        "moduleName": "my",
+        "bizName": "project",
         "minifyHTML": true,
         "minifyCSS": true,
         "minifyJS": true,
