@@ -1,12 +1,8 @@
 {
-  "name": "generator-feflow-react",
+  "name": "generator-ivweb",
   "version": "0.0.1",
   "description": "基于 React + Redux + Webpack4 的 web 业务开发解决方案",
-  "homepage": "http://git.code.oa.com/feflow-plugin/generator-feflow-react",
-  "author": {
-    "name": "stevenzhai",
-    "email": "stevenzhai@tencent.com"
-  },
+  "homepage": "https://github.com/feflow/generator-ivweb",
   "files": [
     "generators"
   ],
@@ -20,9 +16,9 @@
     "compatibleVersion": ">=0.0.1"
   },
   "keywords": [
-    "yeoman-generator",
-    "generator-now-business",
-    "ivweb"
+    "feflow-generator",
+    "ivweb",
+    "feflow"
   ],
   "dependencies": {
     "bunyan": "^1.8.12",
