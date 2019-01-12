@@ -1,6 +1,6 @@
 {
   "name": "generator-ivweb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "腾讯IVWEB出品的基于Redux+Redux开发脚手架",
   "homepage": "https://github.com/feflow/generator-ivweb",
   "files": [
