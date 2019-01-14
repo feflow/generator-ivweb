@@ -10,7 +10,7 @@ import pageStore from "../globalStore/Store";
 
 // import eruda from 'eruda';
 export default class BasePage {
-    
+
     static isLoading = true;
     static store;
     static conainerId = "container";
@@ -20,7 +20,7 @@ export default class BasePage {
     static middlewares = [];
     static autoStopLoading = true;
     static speedParam = '';
-    
+
     static initPage(subClass) {
         //init huatuo start time
         this.initENV();
@@ -32,7 +32,7 @@ export default class BasePage {
         }
         this.getNetworkType();
     }
-    
+
     static warning(condition, format) {
         if (!condition) {
             for (var l = arguments.length, args = Array(l > 2 ? l - 2 : 0), _key = 2; _key < l; _key++) {
@@ -54,13 +54,13 @@ export default class BasePage {
         };
     }
     static getNetworkType() {
-        
+
     }
     static renderPage() {
         this.initPage(this);
         let reactRedux = this.providerConnect();
         let container = document.getElementById(this.conainerId);
-        window._T.page_main_end = new Date();
+        // window._T.page_main_end = new Date();
         ReactDOM.render(reactRedux, container, (component) => {
             if (container.getElementsByTagName("*").length > 0 && this.autoStopLoading) {
                 // feflow: avreport-render_succ
@@ -76,7 +76,7 @@ export default class BasePage {
             this.isLoading = false;
         }
         //页面首屏渲染完成时间点
-        window._T.page_render_end = new Date();
+        // window._T.page_render_end = new Date();
         //count first screen time( default first cgi )
     }
     static providerConnect() {

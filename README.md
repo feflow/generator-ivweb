@@ -1,113 +1,45 @@
-# [generator-feflow-react](http://git.code.oa.com/feflow/generator-feflow-react)
+# [generator-ivweb](https://github.com/feflow/generator-ivweb)
 
-generator-feflow-react is a project scaffolding plugin developed by the feflow team, generate multi-page applications based on react and redux
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/feflow/generator-ivweb/blob/master/LICENSE)
+[![npm package](https://img.shields.io/npm/v/generator-ivweb.svg?style=flat-square)](https://www.npmjs.org/package/generator-ivweb)
+[![NPM downloads](http://img.shields.io/npm/dt/generator-ivweb.svg?style=flat-square)](https://npmjs.org/package/generator-ivweb)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/feflow/generator-ivweb/pulls)
+[![developing with feflow](https://img.shields.io/badge/developing%20with-feflow-1b95e0.svg)](https://github.com/feflow/feflow)
 
-## Quick Overview
+Tencent IVWEB Team project generator, based on React, redux and webpack.
 
-``` sh
-npm install feflow-cli -g   /* install feflow-cli */
-feflow install generator-feflow-react -g /* install generator*/
-feflow init /* create app */
-feflow dev /* run app */
-```
+## Features
 
-## Creating an App
+- ✔︎ Easy to create a project with react and redux
+- ✔︎ Support multiple page development
+- ✔︎ Built-in Rem, it's friendly to develop a mobile application
+- ✔︎ Fast build speed and very small artifacts size
 
-To create a new programe, you can follow this steps
+## Installation
 
-### install feflow-cli
-```sh
-npm install feflow-cli -g
-```
-
-### install generator
-```sh
-feflow install generator-feflow-react -g
-```
-you can install your generator or own generator, [how to develop a generator?]()
-
-### init programe
+You need to install [`feflow`](https://github.com/feflow/feflow) first, it will pass a context to generator-ivweb.
 
 ```sh
-feflow init
-请输入项目名称(不要写空格和汉字) feflow-react-app
-请输入项目描述信息 init a feflow app
-```
-In this step, feflow will create a programe and installation project dependency.
-Inside that directory, it will generate the initial project structure and install the transitive dependencies:
-```
-feflow-react-app
-├── README.md
-├── package.json
-├── .babelrc
-├── .editorconfig
-├── .eslintrc.js
-├── .gitattributes
-├── feflow.json
-├── config.json
-├── node_modules
-└── src
-    ├── assets
-    ├── middleware
-    ├── modules
-    └── pages
-        └── index
-            ├── index.html
-            ├── index.js
-            ├── index.less
-            ├── index.js
-            ├── init.js
-            ├── pageComponent.js
-            ├── actions
-            ├── assets
-            ├── components
-            └── reducers
-             
+$ npm install feflow-cli -g
 ```
 
-### start develop
+Then install generator-ivweb
 
 ```sh
-cd feflow-react-app
-feflow dev
+$ feflow install generator-ivweb
 ```
-Runs the app in development mode.
-Open http://localhost:8001 to view it in the browser.
-
-#### Attention
-If you want to enjoy HMR function while using agent, please add `/^https?:\/\/xxx\.xxx\.com\/__webpack_hmr$/ http://127.0.0.1:8001/__webpack_hmr`in to your agent rule.
-
-### build
+## Usage
 
 ```sh
-$ feflow build
-```
-You can config output dir in feflow.json.
-```
-dist
-├── offline
-├── cdn
-    └── pageName
-        ├── img
-        └── index_xxx.js
-└── webserver
-    └── pageName
-        └── index.html
+$ feflow init
 ```
 
-## What’s Included?
-
-- React, redux and ES6 support.
-- Use webpack4 and babel7.
-- Support for multi-page development and package.
-- Integration Rem solution to solve adaptation problems.
-- Autoprefixed CSS(compatible with ios7).
-- Css preprocessor(less).
+Note: use arrow keys to select.
 
 ## Contributing
 
 1. Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug.
-2. Fork [the repository](https://github.com/feflow/generator-feflow-react) on GitHub to start making your changes to the **master** branch (or branch off of it).
+2. Fork [the repository](https://github.com/feflow/generator-ivweb) on GitHub to start making your changes to the **master** branch (or branch off of it).
 3. Write a test which shows that the bug was fixed or that the feature works as expected.
 4. Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to [AUTHORS_](AUTHORS).
 
@@ -116,5 +48,5 @@ dist
 [Changelog](CHANGELOG.md)
 
 ## License
-generator-feflow-react is open source software [MIT](https://tldrlegal.com/license/mit-license).
+[MIT](https://tldrlegal.com/license/mit-license).
 
