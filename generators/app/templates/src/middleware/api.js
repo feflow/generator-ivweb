@@ -43,19 +43,6 @@ export default store => next => action => {
         opts.data = decamelizeKeys(opts.data);
     }
 
-    //判断是否使用localstorage缓存
-    if (useLocal) {
-        const localData = localStorage.getItem(useLocal.key);
-        
-        if (localData) {
-            localData._isLocal = true;
-            next(actionWith({
-                type: successType,
-                data: localData
-            }));
-        }     
-    }
-
     opts.succ = data => {
         if (data && data.result) {
             data.result.extra = opts.extra;
@@ -73,9 +60,6 @@ export default store => next => action => {
             next(finalAction);
         }
         
-        if (useLocal && data.retcode === 0) {
-            localStorage.setItem(useLocal.key, cameData);
-        }
         
         typeof opts.onSuccess === 'function' && opts.onSuccess(data.result || data || {}, next);
 
@@ -101,6 +85,6 @@ export default store => next => action => {
         }
     }
 
-    return axios(opts);
+    return axios(opts).then(opts.success, opts.err);
 };
  

@@ -5,13 +5,8 @@ import indexPage from "./index";
 (function () {
     function init() {
         try {
-            try {
-                indexPage.renderPage();
-            } catch(err) {
-                throw err;
-            }
+            indexPage.renderPage();
         } catch(err) {
-            // remove
             throw err;
         }
     }
