@@ -1,6 +1,6 @@
 {
   "name": "generator-ivweb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "腾讯IVWEB出品的基于React+Redux开发脚手架",
   "homepage": "https://github.com/feflow/generator-ivweb",
   "files": [
@@ -12,15 +12,13 @@
     "commit": "git-cz ",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
-  "configs": {
-    "compatibleVersion": ">=0.0.1"
-  },
   "keywords": [
     "feflow-generator",
     "ivweb",
     "feflow"
   ],
   "dependencies": {
+    "chalk": "^4.0.0",
     "mkdirp": "^0.5.1",
     "shelljs": "^0.8.3",
     "yeoman-generator": "^1.0.1",

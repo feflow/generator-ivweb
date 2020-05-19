@@ -1,6 +1,7 @@
 'use strict';
 
 const yosay = require('yosay');
+const chalk = require('chalk');
 const Generator = require('yeoman-generator');
 
 module.exports = class extends Generator {
@@ -15,8 +16,6 @@ module.exports = class extends Generator {
    * Print welcome message
    */
   initializing() {
-    const { chalk } = this.options.utils;
-
     this.log(yosay('Feflow脚手架示例'));
     this.log(
       chalk.magenta(
@@ -72,9 +71,9 @@ module.exports = class extends Generator {
    * Install dependencies
    */
   install() {
-    const { log } = this.options;
+    const { logger } = this.options;
 
-    log.info('安装依赖，过程持续1~2分钟');
+    logger.info('安装依赖，过程持续1~2分钟');
     this.npmInstall();
   }
 
@@ -83,14 +82,13 @@ module.exports = class extends Generator {
    */
   end() {
     const { name } = this.answers;
-    const { log } = this.options;
-    const { chalk } = this.options.utils;
+    const { logger } = this.options;
 
-    log.info('本次初始化过程结束, 请通过以下命令运行项目: ');
+    logger.info('本次初始化过程结束, 请通过以下命令运行项目: ');
     console.log();
     console.log(chalk.cyan('  cd'), name);
     console.log(`  ${chalk.cyan('feflow dev')}`);
     console.log();
-    log.info('编码愉快!');
+    logger.info('编码愉快!');
   }
 };
