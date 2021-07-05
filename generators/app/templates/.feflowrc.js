@@ -2,7 +2,7 @@ module.exports = {
     devkit: {
         commands: {
             dev: {
-                builder: "feflow-devkit-ivweb:dev",
+                builder: "feflow-devkit-ivweb-example:dev",
                 options: {
                     product: "",
                     outDir: "dist",
@@ -44,7 +44,7 @@ module.exports = {
                 },
             },
             build: {
-                builder: "feflow-devkit-ivweb:build",
+                builder: "feflow-devkit-ivweb-example:build",
                 options: {
                     product: "",
                     outDir: "dist",
