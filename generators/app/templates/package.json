@@ -3,6 +3,8 @@
   "description": "<%= description %>",
   "version": "<%= version %>",
   "scripts": {
+    "start":"fef start",
+    "build:":"fef build",
     "precommit": "lint-staged",
     "commitmsg": "validate-commit-msg",
     "commit": "git-cz ",
@@ -38,6 +40,7 @@
   "devDependencies": {
     "axios": "^0.18.0",
     "@babel/core": "^7.0.0",
+    "feflow-devkit-ivweb": "^0.0.1",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.0.0",
