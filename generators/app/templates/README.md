@@ -12,7 +12,7 @@
 安装feflow：
 
 ```sh
-$ npm install -g feflow-cli
+$ npm install -g @feflow/cli
 ```
 
 更多feflow操作请前往feflow文档: http://www.feflowjs.org/zh-cn/docs/
@@ -23,10 +23,10 @@ $ npm install -g feflow-cli
 
 ```sh
 # 开发
-$ feflow dev
+$ fef dev
 
 # 发布
-$ feflow build
+$ fef build
 ```
 
 #### 1.2.2 代理配置
